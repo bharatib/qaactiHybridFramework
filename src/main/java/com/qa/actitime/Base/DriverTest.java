@@ -27,7 +27,7 @@ public class DriverTest {
 
 	public static void initapp()
 	{
-			//added directly in git through web
+			//added directly in git through web UI
 			String browser = prop.getProperty("browser");
 			if (browser.equalsIgnoreCase("chrome"))
 			{
