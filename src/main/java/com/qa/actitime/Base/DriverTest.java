@@ -25,9 +25,8 @@ public class DriverTest {
 			System.out.println("Unable to find the file" + e.getMessage());
 		}
 	}
-
-	@Test
-	public static void initapp()
+	
+	public static void initApp()
 	{
 			
 			String browser = prop.getProperty("browser");
