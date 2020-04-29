@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class DriverTest {
 
@@ -25,9 +26,10 @@ public class DriverTest {
 		}
 	}
 
+	@Test
 	public static void initapp()
 	{
-			//added directly in git through web UI
+			
 			String browser = prop.getProperty("browser");
 			if (browser.equalsIgnoreCase("chrome"))
 			{
@@ -47,7 +49,7 @@ public class DriverTest {
 			
 			String url = prop.getProperty("qaurl");
 			driver.get(url);
-			//end of the code
+			
 			
 
 	}
