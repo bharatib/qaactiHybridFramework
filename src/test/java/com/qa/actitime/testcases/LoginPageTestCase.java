@@ -4,12 +4,12 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.qa.actitime.Base.DriverTest;
+import com.qa.actitime.Base.DriverScript;
 import com.qa.actitime.pages.LoginPage;
 
 
 
-public class LoginPageTestCase extends DriverTest {
+public class LoginPageTestCase extends DriverScript {
 	
 	LoginPage lp;
 	//super keyword is used to call parent class constructor
@@ -43,16 +43,16 @@ public class LoginPageTestCase extends DriverTest {
 		Assert.assertEquals("actiTIME - Login", title);
 	}
 	
-	/*@Test(priority=3)
+	@Test(priority=3)
 	public void TestValidationLoginFunction()
 	{
 		lp.ValidateLogin("admin", "manager");
-	}*/
+	}
 	
-	@Test(priority=3)
+	/*@Test(priority=3)
 	public void TestValidationLoginFunction()
 	{
 		lp.ValidateLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
-
+*/
 }

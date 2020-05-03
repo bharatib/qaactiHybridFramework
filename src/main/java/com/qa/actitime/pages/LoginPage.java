@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.qa.actitime.Base.DriverTest;
+import com.qa.actitime.Base.DriverScript;
 
-public class LoginPage extends DriverTest{
+public class LoginPage extends DriverScript{
 	
 //***************************************Page Elements***********************************************//
 	@FindBy(id="logoContainer") WebElement actilogo;
@@ -22,6 +22,7 @@ public class LoginPage extends DriverTest{
 	}
 	
 //***************************************Page Actions Method***********************************************//
+	
 	public boolean VerifyactiLogo()
 	{
 		return actilogo.isDisplayed();
